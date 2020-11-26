@@ -1,22 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import colors from './colors.scss'
+import React from 'react'
 
 function App() {
+    console.log(colors)
+    console.log(colors.primary)
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p style={{color: colors.primary}}>
+          This should be red
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
